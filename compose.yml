@@ -1,0 +1,8 @@
+services:
+  http:
+    container_name: "FlaskServer"
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    ports:
+     - "5000:5000"
